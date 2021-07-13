@@ -1,0 +1,101 @@
+.container{
+  max-width: 100%;
+  margin:0 auto;
+}
+
+header{
+  margin-bottom:30px;
+
+}
+/*---------ribon----------*/
+header h2 {
+ position: relative;
+  margin: 30px;
+  text-align: center;
+}
+
+header h2:before,
+header h2:after {
+  position: absolute;
+  z-index: 0;
+  bottom: -10px;
+  display: block;
+  content: '';
+  border: 1em solid #d90606;
+}
+
+header h2:before {
+  left: -30px;
+  border-left-width: 15px;
+  border-left-color: transparent;
+}
+
+header h2:after {
+  right: -30px;
+  border-right-width: 15px;
+  border-right-color: transparent;
+}
+
+h2 span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #fa4141;
+}
+
+header h2 span:before,
+header h2 span:after {
+  position: absolute;
+  bottom: -10px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-style: solid;
+  border-color: #b70505 transparent transparent transparent;
+}
+
+header h2 span:before {
+  left: 0;
+  border-width: 10px 0 0 10px;
+}
+
+header h2 span:after {
+  right: 0;
+  border-width: 10px 10px 0 0;
+}
+/*-----// ribon --------*/
+#history_turn{
+  width:100%;
+  height:600px;
+  margin:0 auto;
+  background-color:rgba(140, 29, 29,.4);
+  
+}
+#ehon-title img{
+  width:100%;
+  height:600px;
+
+}
+ul{
+  text-align:center;
+  list-style:none;
+  width:100%;
+  margin-bottom:30px;
+
+}
+ul li{
+  width:50%;
+  float:left;
+  
+}
+ul::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+#prevpage, #nextpage{
+  cursor:pointer;
+}
